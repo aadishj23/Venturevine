@@ -1,0 +1,30 @@
+.raise{
+    display: flex;
+    background-color: #023047;
+    padding: 20px 150px;
+}
+.raise-cap,.start-inv{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+#grad{
+    background: linear-gradient(to right,#5AC5DE, #316A78);
+    color: black;
+    margin: 20px 0px;
+}
+.raise-img{
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+}
+#inv-h1{
+    font-size: 50px;
+    width: 500px;
+    color: #88daee;
+}
+#inv-p{
+    color: white;
+}
