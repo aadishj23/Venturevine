@@ -1,0 +1,40 @@
+.footer{
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    padding: 50px 180px 10px 180px;
+}
+
+.footer-top{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.FootCont{
+    border-right: 2px solid white;
+    padding: 10px 50px 20px 50px;
+}
+.foot-about-main{
+    padding: 10px 50px 20px 50px;
+    border-right: 2px solid white;
+}
+.foot-about{
+    display: flex;
+}
+.foot-about p{
+    width: 400px;
+}
+.foot-follow{
+    padding: 10px 50px 20px 50px;
+    border: 30px;
+}
+.foot-follow h3, .foot-about-main h3, .FootCont h3{
+    margin-bottom: 20px;
+}
+.foot-about img{
+    border-radius: 10%;
+}
+.foot-follow a img{
+    margin-right: 30px;
+    border-radius: 10%;
+}

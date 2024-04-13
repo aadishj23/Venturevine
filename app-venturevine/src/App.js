@@ -6,6 +6,7 @@ import Network from './components/network';
 import Investment from './components/investment';
 import Services from './components/services'
 import Servicesdata from './components/servicesdata'
+import Footer from './components/footer'
 function App() {
   const servicesdata= Servicesdata.map(services => {
     return(
@@ -22,6 +23,7 @@ function App() {
       <div className='services-data'>
         {servicesdata}
       </div>
+      <Footer />  
     </div>
   );
 }
