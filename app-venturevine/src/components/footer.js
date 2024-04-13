@@ -23,9 +23,9 @@ function Footer() {
             <div className='foot-follow'>
                 <h3>Follow</h3>
                 <br />
-                <a href=""><img src={Linkedin} alt="" height='45px' /></a>
-                <a href=""><img src={X} alt="" height='45px'/></a>
-                <a href=""><img src={Facebook} alt="" height='45px' /></a>
+                <a href=""><img src={Linkedin} alt="linkedin" height='45px' /></a>
+                <a href=""><img src={X} alt="X" height='45px'/></a>
+                <a href=""><img src={Facebook} alt="Facebook" height='45px' /></a>
             </div>
         </div>
         <p>Copyright ©2024 VentureVine.com. All rights reserved</p>

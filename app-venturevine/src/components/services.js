@@ -1,6 +1,5 @@
 import React from 'react'
 import './services.css'
-import Servicesimage from '../images/export.jpg'
 function Services(props) {
   return (
     <div className="cards">
