@@ -10,8 +10,8 @@ function Footer() {
         <div className='footer-top'>
             <div className='FootCont'>
                 <h3>Contact</h3>
-                <p>📞+91 7876531158</p>
-                <p>✉️venturevine@gmail.com</p>
+                <p>📞  +91 7876531158</p>
+                <p>✉️  venturevine@gmail.com</p>
             </div>
             <div className='foot-about-main'>
                 <h3>About</h3>
