@@ -7,6 +7,7 @@ function Signup() {
         <input type="text" placeholder='Enter Email' />
         <input type="password" placeholder='Enter your password'/>
         <input type="password" placeholder='Confirm password'/>
+        <button>SignUp</button>
     </div>
   )
 }

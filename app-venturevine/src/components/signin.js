@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './signin.css'
 function Signin() {
   return (
-    <div>
+    <div className='signin'>
         <input type="text" placeholder='Enter Email/Phone' />
         <input type="password" placeholder='Enter Password' />
         <button>SignIn</button>
