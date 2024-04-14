@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import Circlelogo from '../images/logoc.png';
 import './navbar.css'
 export default function Navbar(){
@@ -18,8 +19,8 @@ export default function Navbar(){
                     </ul>
                 </div>
                 <div className="nav-buttons">
-                    <button> Sign In</button>
-                    <button id="sign-up"> Sign Up</button>
+                    <a href="Signin"><button> Sign In</button></a>
+                    <a href='Signup'><button id="sign-up"> Sign Up</button></a>
                 </div>
             </div>
             <div className="nav-below">
