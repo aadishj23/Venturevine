@@ -20,6 +20,7 @@
     border-radius: 10px;
     background: linear-gradient(to right,#5AC5DE, #053440);
     cursor: pointer;
+    color: white;
 }
 .signin button:hover{
     font-weight: bold;
