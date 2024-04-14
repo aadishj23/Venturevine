@@ -1,9 +1,9 @@
 body{
     box-sizing: border-box;
-    background: url("/src/images/bg-3.png"),#8cc2da;
-    /* background-position: top,center; */
+    background: #8cc2da;
+    background-position: center; 
     background-size: cover ;
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat;
     position: absolute;
 }
 .services-data{
