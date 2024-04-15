@@ -12,3 +12,6 @@
     filter: invert(86%) sepia(44%) saturate(277%) hue-rotate(334deg) brightness(101%) contrast(92%);
     margin: 20px ;
 }
+.rightbar img:hover{
+    cursor: pointer;
+}
