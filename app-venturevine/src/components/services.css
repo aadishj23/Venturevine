@@ -1,6 +1,6 @@
 .cards{
     width: 300px;
-    height: 300px;
+    height: 365px;
     background: linear-gradient( #dae4e9,#4F7080);
     margin: 30px;
     border-radius: 20px;
@@ -13,6 +13,7 @@
 .card-img{
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: 3px 3px 5px black;
 }
 .card-btn{
     bottom: 0;
@@ -23,9 +24,12 @@
 }
 .card-btn:hover{
     font-weight: bold;
+    /* background: linear-gradient(to right, #316A78, gray); */
+    padding: 3px 85px;
+
 }
 .card-desc {
-    height: 40%;
+    height: 47%;
     color:#023047 ;
     width: 80%;
     margin-left:auto ;

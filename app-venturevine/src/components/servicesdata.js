@@ -5,7 +5,7 @@ export default(
             "id": 1,
             "servicename": "Export",
             "image":require('../images/export.jpg'),
-            "description": "Connect  with logistics partners/exporters offering freight forwarding, customs clearance, and shipping services to facilitate smooth export operations" ,
+            "description": "Connect with logistics partners/ exporters offering freight forwarding, customs clearance, and shipping services to facilitate smooth export operations" ,
         },
         {
             "id": 2,
@@ -17,13 +17,13 @@ export default(
             "id": 3,
             "servicename": "Analytics",
             "image":require('../images/analytics.jpg'),
-            "description": "Analytics services to help you derive actionable insights. Get statistical analysis of your profile, post. Revenue projection tool, funding/investment status, inventory management." ,
+            "description": "Analytics services to help you derive actionable insights. Get statistical analysis of your profile, post. Revenue projection tool, funding/ investment status, inventory management." ,
         },
         {
             "id": 4,
-            "servicename": "Supplier Integeration",
+            "servicename": "Supplier Support",
             "image":require('../images/supplier.jpg'),
-            "description": "Discover a wide range of suppliers and vendors specializing in raw materials, components, or manufacturing services, tailored to their specific industry and requirements." ,
+            "description": "Discover a wide range of suppliers and vendors specializing in raw materials, components, or manufacturing services, tailored to their specific industry and requirements." ,
         },
     ]
 )

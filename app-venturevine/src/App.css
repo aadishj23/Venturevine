@@ -5,6 +5,7 @@ body{
     background-size: cover ;
     background-repeat: no-repeat;
     position: absolute;
+    font-family: "Poppins", sans-serif;
 }
 .services-data{
     display: flex;

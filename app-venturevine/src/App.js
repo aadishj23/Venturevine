@@ -13,7 +13,7 @@ import Signup from './components/signup'
 function App() {
   const servicesdata= Servicesdata.map(services => {
     return(
-      <Services servicename={services.servicename} image={services.image} description={services.description} />
+      <Services key={services.id} servicename={services.servicename} image={services.image} description={services.description} />
     )
   })
   const router=createBrowserRouter([
