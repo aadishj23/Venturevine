@@ -1,12 +1,40 @@
 .community-heading{
     display: flex;
+    margin: 0px 20px;
+    padding-top: 7px;
+}
+.community-heading div h3{
+    padding-left: 10px ;
 }
 .profile{
     text-align: center;
+    width: 300px;
+    padding: 25px ;
+    background-color:#023047 ;
+    color: wheat;
+    margin: 15px 20px;
+    border-radius: 20px;
 }
 .profile-stats{
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 17px;
+}
+.stats{
+    font-size: 20px;
+}
+.community-features div{
+    background-color:#023047 ;
+    width: 300px;
+    margin: 10px 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 .community-options{
     display: flex;
+    color: wheat;
+}
+.community-options img{
+    color: inherit;
 }
