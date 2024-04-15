@@ -1,0 +1,14 @@
+.rightbar{
+    background-color: #023047;
+    width: 350px;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+.rightbar-images{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rightbar img{
+    filter: invert(86%) sepia(44%) saturate(277%) hue-rotate(334deg) brightness(101%) contrast(92%);
+    margin: 20px ;
+}

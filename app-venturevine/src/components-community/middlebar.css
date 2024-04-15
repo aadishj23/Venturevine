@@ -1,0 +1,23 @@
+.middlebar{
+    margin: 0px 15px;
+}
+#search-comm{
+    margin: 13px auto 0px auto ;
+    padding:8px 30px ;
+    font-size: 22px;
+    display: block;
+    width: 680px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+    color: wheat;
+    background-color: #023047;
+    border: 0px;
+}
+
+.community-area{
+    background-color: #023047;
+    height: 91%;
+    margin:20px 0px ;
+    border-radius: 20px;
+}
