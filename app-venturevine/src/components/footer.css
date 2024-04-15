@@ -40,3 +40,10 @@
     border-radius: 10%;
     box-shadow: 2px 2px 3px black;
 }
+.phone-email-logo{
+    display: flex;
+    padding: 5px 0px;
+}
+.phone-email-logo img{
+    margin-right: 15px;
+}

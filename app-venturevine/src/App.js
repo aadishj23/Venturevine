@@ -39,7 +39,10 @@ function App() {
     {
       path: "/Signup",
       element: <Signup />
-    }
+    },
+    // {
+    //   path:
+    // }
   ])
 
   return (
