@@ -10,6 +10,7 @@ import Servicesdata from './components/servicesdata'
 import Footer from './components/footer'
 import Signin from './components/signin'
 import Signup from './components/signup'
+import Community from './community';
 function App() {
   const servicesdata= Servicesdata.map(services => {
     return(
@@ -40,9 +41,10 @@ function App() {
       path: "/Signup",
       element: <Signup />
     },
-    // {
-    //   path:
-    // }
+    {
+      path: "/community",
+      element: <Community />
+    }
   ])
 
   return (

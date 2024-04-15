@@ -13,11 +13,11 @@ function Footer() {
             <div className='FootCont'>
                 <h3>Contact</h3>
                 <div  className='phone-email-logo'>
-                    <img src={Phone} alt="" />
+                    <img src={Phone} alt="Phone" />
                     <p>  +91 7876531158</p>
                 </div>
                 <div className='phone-email-logo'>
-                    <img src={Mail} alt="" />
+                    <img src={Mail} alt="Email" />
                     <p>  venturevine@gmail.com</p>
                 </div>
             </div>
