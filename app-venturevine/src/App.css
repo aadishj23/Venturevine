@@ -1,19 +1,4 @@
 body{
     box-sizing: border-box;
-    background: #8cc2da;
-    background-position: center; 
-    background-size: cover ;
-    background-repeat: no-repeat;
-    position: absolute;
     font-family: "Poppins", sans-serif;
-}
-.services-data{
-    display: flex;
-    text-align: center;
-}
-#service-name{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 20px;
-    color:#023047 ;
 }

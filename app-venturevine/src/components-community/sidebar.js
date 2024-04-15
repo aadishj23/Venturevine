@@ -3,13 +3,15 @@ import './sidebar.css'
 function Sidebar() {
   return (
     <div>
-        <div className='commnity-heading'>
+        <div className='community-heading'>
             <img src={require('../images/logoc.png')} alt="logo"  height='55px'/>
-            <h3>The Venturevine</h3>
-            <h3>Community</h3>
+            <div>
+                <h3>The Venturevine</h3>
+                <h3>Community</h3>
+            </div>
         </div>
-        <div className='Profile'>
-            <img src="" alt="" />
+        <div className='profile'>
+            <img src={require('../images/profile-image.png')} alt="profile image" />
             <p>Name</p>
             <p>id</p>
             <div className='profile-stats'>

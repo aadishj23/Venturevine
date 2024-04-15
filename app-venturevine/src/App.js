@@ -5,18 +5,12 @@ import Navbar from './components/navbar'
 import Searchbar from './components/searchbar'
 import Network from './components/network';
 import Investment from './components/investment';
-import Services from './components/services'
-import Servicesdata from './components/servicesdata'
+import Mainservices from './components/mainservices';
 import Footer from './components/footer'
 import Signin from './components/signin'
 import Signup from './components/signup'
 import Community from './community';
 function App() {
-  const servicesdata= Servicesdata.map(services => {
-    return(
-      <Services key={services.id} servicename={services.servicename} image={services.image} description={services.description} />
-    )
-  })
   const router=createBrowserRouter([
     {
       path: '/',
@@ -26,10 +20,7 @@ function App() {
         <Searchbar/>
         <Network/>
         <Investment />
-        <h1 id="service-name">Services</h1>
-        <div className='services-data'>
-          {servicesdata}
-        </div>
+        <Mainservices />
         <Footer />  
       </div>
     },
@@ -50,15 +41,6 @@ function App() {
   return (
     <div >
       <RouterProvider router={router} />
-      {/* <Navbar/>
-      <Searchbar/>
-      <Network/>
-      <Investment />
-      <h1 id="service-name">Services</h1>
-      <div className='services-data'>
-        {servicesdata}
-      </div>
-      <Footer />   */}
     </div>
   );
 }

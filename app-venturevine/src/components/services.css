@@ -1,3 +1,7 @@
+.services-main{
+    background-color:#8cc2da ;
+    margin-top: -20px;
+}
 .cards{
     width: 300px;
     height: 365px;
@@ -34,4 +38,14 @@
     width: 80%;
     margin-left:auto ;
     margin-right: auto;
+}
+.services-data{
+    display: flex;
+    text-align: center;
+}
+#service-name{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    color:#023047 ;
 }

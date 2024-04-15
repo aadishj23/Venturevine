@@ -1,3 +1,12 @@
+.community-heading{
+    display: flex;
+}
+.profile{
+    text-align: center;
+}
+.profile-stats{
+    display: flex;
+}
 .community-options{
     display: flex;
 }

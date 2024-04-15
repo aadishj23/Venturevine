@@ -4,7 +4,7 @@ import Circlelogo from '../images/logoc.png';
 import './navbar.css'
 export default function Navbar(){
     return(
-        <div>
+        <div className="header">
             <div className="navbar">
                 <div className="icon-name">
                     <img src={Circlelogo} alt="Logo" id="logo" />
