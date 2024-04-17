@@ -2,3 +2,9 @@ body{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.community{
+    background-color: #8ECAE6;
+}
+.cm-divide{
+    display: flex;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import './sidebar.css'
+import {Link} from 'react-router-dom'
 function Sidebar() {
   return (
     <div>
@@ -32,35 +33,35 @@ function Sidebar() {
         <div className='community-features'>
             <div className='community-options'>
                 <img src={require('../images/discover.png')} alt="discover" />
-                <h4>Discover</h4>
+                <Link to='/community/discover'><h4>Discover</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/My Community.png')} alt="discover" />
-                <h4>My Community</h4>
+                <img src={require('../images/My Community.png')} alt="My Community" />
+                <Link to='/community/myCommunity'><h4>My Community</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/Requests.png')} alt="discover" />
-                <h4>Requests</h4>
+                <img src={require('../images/Requests.png')} alt="Requests" />
+                <Link to='/community/requests'><h4>Requests</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/Experts.png')} alt="discover" />
-                <h4>Experts</h4>
+                <img src={require('../images/Experts.png')} alt="Experts" />
+                <Link to='/community/experts'><h4>Experts</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/Founder group.png')} alt="discover" />
-                <h4>Founder's Group</h4>
+                <img src={require('../images/Founder group.png')} alt="Founder's Group" />
+                <Link to='/community/foundergroup'><h4>Founder's Group</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/Post.png')} alt="discover" />
-                <h4>Post</h4>
+                <img src={require('../images/Post.png')} alt="Post" />
+                <Link to='/community/post'><h4>Post</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/Events.png')} alt="discover" />
-                <h4>Events</h4>
+                <img src={require('../images/Events.png')} alt="events" />
+                <Link to='/community/events'><h4>Events</h4></Link>
             </div>
             <div className='community-options'>
-                <img src={require('../images/settings.png')} alt="discover" />
-                <h4>Settings</h4>
+                <img src={require('../images/settings.png')} alt="Settings" />
+                <Link to='/community/settings'><h4>Settings</h4></Link>
             </div>
         </div>
     </div>

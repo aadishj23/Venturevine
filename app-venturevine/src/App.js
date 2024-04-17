@@ -9,7 +9,17 @@ import Mainservices from './components/mainservices';
 import Footer from './components/footer'
 import Signin from './components/signin'
 import Signup from './components/signup'
-import Community from './community';
+import Middlebar from './components-community/middlebar'
+import Sidebar from './components-community/sidebar'
+import Rightbar from './components-community/rightbar'
+import Middlebardiscover from './components-community/middlebar-discover';
+import MiddlebarRequests from './components-community/middlebarRequests';
+import MiddlebarmyCommunity from './components-community/middlebarmyCommunity';
+import MiddlebarExperts from './components-community/middlebarExperts';
+import MiddlebarFounderGroup from './components-community/middlebarFounderGroup';
+import MiddlebarPost from './components-community/middlebarPost';
+import MiddlebarEvents from './components-community/middlebarEvents';
+import MiddlebarSettings from './components-community/middlebarSettings';
 function App() {
   const router=createBrowserRouter([
     {
@@ -34,7 +44,102 @@ function App() {
     },
     {
       path: "/community",
-      element: <Community />
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <Middlebar />
+            <Rightbar />
+          </div>
+        </div>
+    }, 
+    {
+      path: "/community/discover",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <Middlebardiscover />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: '/community/myCommunity',
+      element:
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarmyCommunity />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: '/community/requests',
+      element:
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarRequests />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: "/community/experts",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarExperts />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: "/community/foundergroup",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarFounderGroup />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: "/community/post",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarPost />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: "/community/events",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarEvents />
+            <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: "/community/settings",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <MiddlebarSettings />
+            <Rightbar />
+          </div>
+        </div>
     }
   ])
 
