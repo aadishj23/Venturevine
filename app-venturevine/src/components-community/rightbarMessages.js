@@ -1,7 +1,7 @@
 import React from 'react'
 import './rightbar.css'
 import { Link } from 'react-router-dom'
-function Rightbar() {
+function RightbarMessages() {
   return (
     <div className='rightbar'>
         <div className='rightbar-images'>
@@ -9,9 +9,9 @@ function Rightbar() {
             <Link to='/community/unreadMessages'><img src={require('../images/SMS.png')} alt="Messages" /></Link>
             <Link to='/community/collaboration'><img src={require('../images/Collaboration.png')} alt="Community" /></Link>
         </div>
-        <div className='rightbar-elements'></div>
+        <div className='rightbar-elements'>Unread Messages</div>
     </div>
   )
 }
 
-export default Rightbar
+export default RightbarMessages

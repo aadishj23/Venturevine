@@ -20,6 +20,9 @@ import MiddlebarFounderGroup from './components-community/middlebarFounderGroup'
 import MiddlebarPost from './components-community/middlebarPost';
 import MiddlebarEvents from './components-community/middlebarEvents';
 import MiddlebarSettings from './components-community/middlebarSettings';
+import RightbarCollaboration from './components-community/rightbarcollaboration';
+import RightbarMessages from './components-community/rightbarMessages';
+import RightbarNotifications from './components-community/rightbarNotifications';
 function App() {
   const router=createBrowserRouter([
     {
@@ -138,6 +141,37 @@ function App() {
             <Sidebar />
             <MiddlebarSettings />
             <Rightbar />
+          </div>
+        </div>
+    },
+    {
+      path: "/community/notifications",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <Middlebardiscover />
+            <RightbarNotifications />
+          </div>
+        </div>
+    },{
+      path: "/community/unreadMessages",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <Middlebardiscover />
+            <RightbarMessages />
+          </div>
+        </div>
+    },{
+      path: "/community/collaboration",
+      element: 
+        <div className='community'>
+          <div className='cm-divide'>
+            <Sidebar />
+            <Middlebardiscover />
+            <RightbarCollaboration />
           </div>
         </div>
     }

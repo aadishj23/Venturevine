@@ -5,6 +5,7 @@ function Sidebar() {
   return (
     <div>
         <div className='community-heading'>
+            <Link to='/'><img src={require('../images/back-button.jpg')} id='back-button' alt="Back-Button" height='50px'/></Link>
             <img src={require('../images/logoc.png')} alt="logo"  height='55px'/>
             <div>
                 <h3>The Venturevine</h3>

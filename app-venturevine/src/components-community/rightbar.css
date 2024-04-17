@@ -1,4 +1,6 @@
 .rightbar{
+    display: flex;
+    flex-direction: column;
     background-color: #023047;
     width: 350px;
     margin: 10px 20px;
@@ -14,4 +16,8 @@
 }
 .rightbar img:hover{
     cursor: pointer;
+}
+.rightbar-elements{
+    padding: 10px 30px;
+    color: wheat;
 }
