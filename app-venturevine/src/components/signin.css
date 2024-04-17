@@ -1,10 +1,10 @@
-.signin{
+.signin form{
     background: linear-gradient(#023047,white);
     display: flex;
     flex-direction: column;
     padding: 262px 531px ;
 }
-.signin input{
+.signin form input{
     margin: 15px;
     font-size: 20px;
     width: 400px;
@@ -12,7 +12,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 3px black;
 }
-.signin button{
+.signin form button{
     margin: 15px auto;
     font-size: 20px;
     width: 120px;
@@ -22,6 +22,6 @@
     cursor: pointer;
     color: white;
 }
-.signin button:hover{
+.signin form button:hover{
     font-weight: bold;
 }

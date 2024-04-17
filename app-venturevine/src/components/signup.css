@@ -1,11 +1,11 @@
-.signup{
+.signup form{
     background: linear-gradient(#023047,white);
     display: flex;
     flex-direction: column;
     padding: 191px 531px ;
 }
 
-.signup input{
+.signup form input{
     margin: 15px;
     font-size: 20px;
     width: 400px;
@@ -13,7 +13,7 @@
     border-radius: 10px;
     box-shadow: 1px 1px 3px black;
 }
-.signup button{
+.signup form button{
     margin: 15px auto;
     font-size: 20px;
     width: 120px;
@@ -21,7 +21,8 @@
     border-radius: 10px;
     background: linear-gradient(to right,#5AC5DE, #053440);
     cursor: pointer;
+    text-align: center;
 }
-.signup button:hover{
+.signup form button:hover{
     font-weight: bold;
 }
