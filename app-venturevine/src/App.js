@@ -23,6 +23,7 @@ import MiddlebarSettings from './components-community/middlebarSettings';
 import RightbarCollaboration from './components-community/rightbarcollaboration';
 import RightbarMessages from './components-community/rightbarMessages';
 import RightbarNotifications from './components-community/rightbarNotifications';
+import Landing from './components-investing/landing';
 function App() {
   const router=createBrowserRouter([
     {
@@ -164,7 +165,8 @@ function App() {
             <RightbarMessages />
           </div>
         </div>
-    },{
+    },
+    {
       path: "/community/collaboration",
       element: 
         <div className='community'>
@@ -173,6 +175,13 @@ function App() {
             <Middlebardiscover />
             <RightbarCollaboration />
           </div>
+        </div>
+    },
+    {
+      path: "/investments",
+      element: 
+        <div>
+          <Landing />
         </div>
     }
   ])
