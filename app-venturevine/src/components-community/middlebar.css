@@ -23,3 +23,14 @@
     padding: 20px 30px;
     color: wheat;
 }
+
+.sub-com-area textarea{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+fieldset{
+    padding: 10px;
+    border-radius: 6px;
+}

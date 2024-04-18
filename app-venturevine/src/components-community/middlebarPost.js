@@ -7,7 +7,17 @@ function MiddlebarPost() {
             <input type="text" id="search-comm" placeholder="🔍 Search by...." />
         </div>
         <div className='community-area'> 
-            <p>Post</p>
+            <div className='sub-com-area'>
+              <textarea placeholder='Enter something about your post' name="" id="" />
+              <fieldset>
+                <legend>
+                  Upload your Image 
+                </legend>
+                <input type="file" />
+              </fieldset>
+             
+
+            </div>
         </div>
     </div>
   )
