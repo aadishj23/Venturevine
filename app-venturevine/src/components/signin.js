@@ -19,15 +19,19 @@ function Signin() {
   return (
     <div className='signin'>
       <form onSubmit={handleSubmitSignIn}>
+        <label htmlFor="email-phone"> EMAIL/PHONE </label>
         <input 
             type="text" 
+            id='email-phone'
             placeholder='Enter Email/Phone' 
             name="Name" 
             value={signInData.Name} 
             onChange={handleChangeSignIn}
         />
+        <label htmlFor="pswd"> PASSWORD </label>
         <input 
           type="password" 
+          id='pswd'
           placeholder='Enter Password' 
           name="Password" 
           value={signInData.Password} 

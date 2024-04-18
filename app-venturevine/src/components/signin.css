@@ -2,7 +2,7 @@
     background: linear-gradient(#023047,white);
     display: flex;
     flex-direction: column;
-    padding: 262px 531px ;
+    padding: 235px 531px ;
 }
 .signin form input{
     margin: 15px;

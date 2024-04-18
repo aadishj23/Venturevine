@@ -2,7 +2,7 @@
     background: linear-gradient(#023047,white);
     display: flex;
     flex-direction: column;
-    padding: 191px 531px ;
+    padding: 140px 531px ;
 }
 
 .signup form input{
@@ -24,5 +24,9 @@
     text-align: center;
 }
 .signup form button:hover{
+    font-weight: bold;
+}
+
+label{
     font-weight: bold;
 }
