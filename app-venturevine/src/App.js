@@ -177,13 +177,13 @@ function App() {
           </div>
         </div>
     },
-    {
-      path: "/investments",
-      element: 
-        <div>
-          <Landing />
-        </div>
-    }
+    // {
+    //   path: "/investments",
+    //   element: 
+    //     <div>
+    //       <Landing />
+    //     </div>
+    // }
   ])
 
   return (

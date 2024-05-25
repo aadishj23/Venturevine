@@ -10,13 +10,13 @@ function Investment() {
             <h1 className='net-g' id="inv-h1">Raise Capital</h1>
             <p className='net-p' id="inv-p">Explore a myriad of funding opportunities tailored to your startup's needs</p>
             <img src={Rfund} alt="Raise" height="200px" className='raise-img' />
-            <Link to='/investments'><button className='net-b' id="grad">Get Started</button></Link>
+            <button className='net-b' id="grad">Get Started</button>
         </div>
         <div className="start-inv">
             <h1 className='net-g' id="inv-h1">Start Investing</h1>
             <p className='net-p' id="inv-p">Buy shares of your favorite early stage startups and companies</p>
             <img src={Fund} alt="start-investing" height="200px" className='raise-img'/>
-            <Link to='/investments'><button className='net-b' id="grad">Get Started</button></Link>
+            <Link to='/'><button className='net-b' id="grad">Get Started</button></Link>
         </div>
     </div>
   )
