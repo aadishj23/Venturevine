@@ -28,14 +28,14 @@ function App() {
     {
       path: '/Signin',
       element: 
-        <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600 flex items-center justify-center p-4">
+        <div className="min-h-screen flex items-center justify-center">
           <Signin />
         </div>
     },
     {
       path: "/Signup",
       element: 
-        <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600 flex items-center justify-center p-4">
+        <div className="min-h-screen flex items-center justify-center">
           <Signup />
         </div>
     },

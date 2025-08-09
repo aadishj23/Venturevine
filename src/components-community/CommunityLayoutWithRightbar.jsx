@@ -86,7 +86,7 @@ function CommunityLayoutWithRightbar() {
               </svg>
             </button>
             <div className='flex items-center'>
-              <img src='/src/assets/logoc.png' alt="logo" className='w-8 h-8 rounded-lg' />
+              <img src='/logoc.png' alt="logo" className='w-8 h-8 rounded-lg' />
               <span className='ml-2 text-lg font-bold text-[#023047]'>VentureVine</span>
             </div>
             <button
