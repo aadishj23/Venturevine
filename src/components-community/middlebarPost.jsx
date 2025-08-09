@@ -5,7 +5,7 @@ function MiddlebarPost() {
   const [selectedFile, setSelectedFile] = useState(null)
 
   return (
-    <div className='mx-2 sm:mx-4 lg:mx-6 px-2 sm:px-4 h-full flex flex-col'>
+    <div className='mx-2 sm:mx-4 lg:mx-6 px-2 sm:px-4 min-h-full flex flex-col'>
         <div className="mt-3 sm:mt-4">
             <input 
                 type="text" 
@@ -13,7 +13,7 @@ function MiddlebarPost() {
                 className="block w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-8 md:px-10 py-2 sm:py-3 text-base sm:text-lg md:text-xl lg:text-2xl rounded-xl bg-white border-2 border-slate-200 text-slate-700 placeholder:text-slate-500 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-400/30 focus:border-blue-400 focus:shadow-xl transition-all duration-300"
             />
         </div>
-        <div className='bg-gradient-to-br from-white to-slate-50 flex-1 mt-4 sm:mt-6 lg:mt-8 rounded-3xl p-4 sm:p-6 lg:p-8 text-slate-800 shadow-xl border border-slate-200/50 flex flex-col overflow-y-auto'> 
+        <div className='bg-gradient-to-br from-white to-slate-50 flex-1 mt-4 sm:mt-6 lg:mt-8 rounded-3xl p-4 sm:p-6 lg:p-8 text-slate-800 shadow-xl border border-slate-200/50 flex flex-col'> 
             <div className="max-w-2xl mx-auto">
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 sm:mb-8 text-center">
                     Create a New Post

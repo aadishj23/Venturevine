@@ -7,6 +7,7 @@ import RightbarMessages from './rightbarMessages'
 import RightbarCollaboration from './rightbarcollaboration'
 import CommunityRouter from './CommunityRouter'
 import MobileBottomNav from './MobileBottomNav'
+import { Link } from 'react-router-dom'
 
 // Rightbar component mapping based on URL query parameter
 const rightbarMap = {
@@ -47,7 +48,7 @@ function CommunityLayoutWithRightbar() {
         </div>
       )}
       
-      <div className='flex flex-col lg:flex-row h-screen max-w-full overflow-hidden'>
+      <div className='flex flex-col lg:flex-row h-screen max-w-full lg:overflow-hidden'>
         {/* Mobile Sidebar Overlay */}
         {isMobileSidebarOpen && (
           <div 
@@ -74,7 +75,7 @@ function CommunityLayoutWithRightbar() {
           />
         </div>
         
-        <div className='flex-1 min-w-0 flex flex-col'>
+        <div className='flex-1 min-w-0 flex flex-col lg:overflow-hidden'>
           {/* Mobile Header */}
           <div className='lg:hidden flex items-center justify-between p-4 bg-white border-b border-slate-200 shadow-sm'>
             <button
@@ -87,7 +88,7 @@ function CommunityLayoutWithRightbar() {
             </button>
             <div className='flex items-center'>
               <img src='/logoc.png' alt="logo" className='w-8 h-8 rounded-lg' />
-              <span className='ml-2 text-lg font-bold text-[#023047]'>VentureVine</span>
+              <Link to='/'><span className='ml-2 text-lg font-bold text-[#023047]'>VentureVine</span></Link>
             </div>
             <button
               onClick={() => setIsMobileRightbarOpen(true)}
@@ -99,7 +100,7 @@ function CommunityLayoutWithRightbar() {
             </button>
           </div>
           
-          <div className='pb-20 lg:pb-0'>
+          <div className='pb-20 lg:pb-0 flex-1 overflow-y-auto community-mobile-scroll'>
             <CommunityRouter />
           </div>
         </div>
