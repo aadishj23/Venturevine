@@ -1,4 +1,4 @@
 # VentureVine
 
-- Made using React
+- Made using React+Vite
 - Website: https://venturevine.aadish.tech/
