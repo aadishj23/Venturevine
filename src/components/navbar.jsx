@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Circlelogo from '../assets/logoc.png';
+import BackgroundImage from '../assets/bg-3.png';
 
 export default function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return(
-        <div className="bg-cover bg-top bg-no-repeat pb-32 sm:pb-40 lg:pb-48 relative overflow-hidden" style={{backgroundImage: "url('/src/assets/bg-3.png')"}}>
+        <div className="bg-cover bg-top bg-no-repeat pb-32 sm:pb-40 lg:pb-48 relative overflow-hidden" style={{backgroundImage: `url(${BackgroundImage})`}}>
             {/* Background Overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#023047]/80 via-[#023047]/60 to-transparent"></div>
             

@@ -31,7 +31,7 @@ function Rightbar() {
         <div className='flex justify-evenly p-4 sm:p-6 border-b border-slate-200/50 bg-gradient-to-r from-blue-50/50 to-cyan-50/50'>
             {quickActions.map((action, index) => (
                 <Link key={index} to={createRightbarUrl(action.rightbar)} className='relative group'>
-                    <div className='w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center hover:from-blue-200 hover:to-cyan-200 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg'>
+                    <div className='w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center hover:from-blue-200 hover:to-cyan-200 active:from-blue-300 active:to-cyan-300 transition-all duration-300 cursor-pointer shadow-md hover:shadow-lg active:shadow-inner touch-manipulation'>
                         <span className='text-xl sm:text-2xl'>{action.icon}</span>
                         {action.count > 0 && (
                             <span className='absolute -top-2 -right-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-medium shadow-md'>
@@ -66,13 +66,13 @@ function Rightbar() {
                 </h4>
                 <div className='space-y-2'>
                     {upcomingEvents.map((event, index) => (
-                        <div key={index} className='bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-3 hover:from-blue-100 hover:to-cyan-100 transition-all duration-300 border border-blue-100/50 shadow-sm'>
+                        <div key={index} className='bg-gradient-to-r from-blue-50 to-cyan-50 rounded-lg p-3 hover:from-blue-100 hover:to-cyan-100 active:from-blue-200 active:to-cyan-200 transition-all duration-300 border border-blue-100/50 shadow-sm'>
                             <p className='text-sm font-medium mb-1 text-slate-700'>{event.title}</p>
                             <p className='text-xs text-slate-500'>{event.date} • {event.time}</p>
                         </div>
                     ))}
                 </div>
-                <button className='w-full mt-3 px-3 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 hover:from-blue-200 hover:to-cyan-200 rounded-lg text-sm font-medium transition-all duration-300 text-slate-700 shadow-md hover:shadow-lg border border-blue-200/50'>
+                <button className='w-full mt-3 px-3 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 hover:from-blue-200 hover:to-cyan-200 active:from-blue-300 active:to-cyan-300 rounded-lg text-sm font-medium transition-all duration-300 text-slate-700 shadow-md hover:shadow-lg active:shadow-inner border border-blue-200/50 touch-manipulation'>
                     View All Events
                 </button>
             </div>
@@ -96,13 +96,13 @@ function Rightbar() {
                                 <p className='text-xs text-slate-500 truncate'>{person.title}</p>
                                 <p className='text-xs text-slate-400 truncate'>{person.company}</p>
                             </div>
-                            <button className='px-2 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 hover:from-emerald-200 hover:to-teal-200 rounded text-xs font-medium transition-all duration-300 flex-shrink-0 text-slate-700 shadow-sm border border-emerald-200/50'>
+                            <button className='px-2 py-1 bg-gradient-to-r from-emerald-100 to-teal-100 hover:from-emerald-200 hover:to-teal-200 active:from-emerald-300 active:to-teal-300 rounded text-xs font-medium transition-all duration-300 flex-shrink-0 text-slate-700 shadow-sm border border-emerald-200/50 touch-manipulation'>
                                 Connect
                             </button>
                         </div>
                     ))}
                 </div>
-                <button className='w-full mt-3 px-3 py-2 bg-gradient-to-r from-emerald-100 to-teal-100 hover:from-emerald-200 hover:to-teal-200 rounded-lg text-sm font-medium transition-all duration-300 text-slate-700 shadow-md hover:shadow-lg border border-emerald-200/50'>
+                <button className='w-full mt-3 px-3 py-2 bg-gradient-to-r from-emerald-100 to-teal-100 hover:from-emerald-200 hover:to-teal-200 active:from-emerald-300 active:to-teal-300 rounded-lg text-sm font-medium transition-all duration-300 text-slate-700 shadow-md hover:shadow-lg active:shadow-inner border border-emerald-200/50 touch-manipulation'>
                     Discover More
                 </button>
             </div>

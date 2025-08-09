@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logoImg from '../assets/logoc.png'
 
-function Sidebar() {
+function Sidebar({ onMobileClose, isMobileOpen }) {
   const [isCollapsed, setIsCollapsed] = useState(false)
   const location = useLocation()
 
@@ -19,13 +19,30 @@ function Sidebar() {
 
   const isActiveRoute = (route) => location.pathname === route
 
+  const handleNavigation = () => {
+    // Close mobile sidebar when navigating
+    if (onMobileClose) {
+      onMobileClose()
+    }
+  }
+
   return (
     <div className={`flex flex-col h-full bg-gradient-to-b from-white to-slate-50 shadow-xl border-r border-slate-200/50 transition-all duration-300 ${
       isCollapsed ? 'w-16 lg:w-20' : 'w-64 lg:w-80'
     }`}>
         {/* Header */}
         <div className='flex items-center p-4 lg:p-6 bg-gradient-to-r from-white to-blue-50 border-b border-blue-200/30 shadow-sm'>
-            <Link to='/' className='flex items-center flex-shrink-0'>
+            {/* Mobile Close Button */}
+            {onMobileClose && (
+              <button
+                onClick={onMobileClose}
+                className='lg:hidden p-2 hover:bg-blue-100 rounded-xl transition-colors duration-200 mr-2'
+              >
+                <span className='text-[#023047] text-xl'>×</span>
+              </button>
+            )}
+            
+            <Link to='/' className='flex items-center flex-shrink-0' onClick={handleNavigation}>
                 <div className='w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-[#023047] to-[#034561] rounded-xl flex items-center justify-center mr-3 shadow-md hover:shadow-lg transition-shadow duration-300'>
                     <span className='text-white text-sm lg:text-base font-bold'>←</span>
                 </div>
@@ -39,7 +56,7 @@ function Sidebar() {
             )}
             <button 
                 onClick={() => setIsCollapsed(!isCollapsed)}
-                className='ml-auto p-2 hover:bg-blue-100 rounded-xl transition-colors duration-200 sm:hidden'
+                className='ml-auto p-2 hover:bg-blue-100 rounded-xl transition-colors duration-200 hidden sm:block'
             >
                 <span className='text-[#023047]'>{isCollapsed ? '→' : '←'}</span>
             </button>
@@ -81,16 +98,17 @@ function Sidebar() {
                     <Link
                         key={index}
                         to={item.route}
-                        className={`flex items-center p-3 lg:p-4 rounded-2xl transition-all duration-300 group ${
+                        onClick={handleNavigation}
+                        className={`flex items-center p-3 lg:p-4 rounded-2xl transition-all duration-300 group touch-manipulation ${
                             isActiveRoute(item.route)
                                 ? 'bg-gradient-to-r from-[#023047] to-[#034561] text-white shadow-lg border border-blue-200/20'
-                                : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#023047] hover:to-[#034561] hover:text-white'
+                                : 'text-gray-700 hover:bg-gradient-to-r hover:from-[#023047] hover:to-[#034561] hover:text-white active:bg-gradient-to-r active:from-[#023047] active:to-[#034561] active:text-white'
                         }`}
                     >
                         <div className={`w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${
                             isActiveRoute(item.route) 
                                 ? 'bg-white/20 shadow-inner' 
-                                : 'bg-slate-100 group-hover:bg-white/20 shadow-sm'
+                                : 'bg-slate-100 group-hover:bg-white/20 group-active:bg-white/20 shadow-sm'
                         }`}>
                             <span className='text-xl lg:text-2xl'>{item.icon}</span>
                         </div>
@@ -100,7 +118,7 @@ function Sidebar() {
                                 <p className={`text-xs lg:text-sm truncate transition-colors duration-300 ${
                                     isActiveRoute(item.route) 
                                         ? 'text-blue-200' 
-                                        : 'text-gray-500 group-hover:text-blue-200'
+                                        : 'text-gray-500 group-hover:text-blue-200 group-active:text-blue-200'
                                 }`}>
                                     {item.description}
                                 </p>
@@ -118,10 +136,10 @@ function Sidebar() {
         {!isCollapsed && (
             <div className='p-4 lg:p-6 border-t border-slate-200/50 bg-gradient-to-r from-white to-slate-50'>
                 <div className='space-y-3'>
-                    <button className='w-full px-4 py-3 bg-gradient-to-r from-[#023047] to-[#034561] text-white rounded-xl font-medium hover:from-[#034561] hover:to-[#045c7a] transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-[1.02]'>
+                    <button className='w-full px-4 py-3 bg-gradient-to-r from-[#023047] to-[#034561] text-white rounded-xl font-medium hover:from-[#034561] hover:to-[#045c7a] active:from-[#045c7a] active:to-[#056c8a] transition-all duration-300 shadow-md hover:shadow-lg active:shadow-inner transform hover:scale-[1.02] active:scale-[0.98] touch-manipulation'>
                         Create Post
                     </button>
-                    <button className='w-full px-4 py-3 bg-gradient-to-r from-slate-100 to-blue-100 text-slate-700 rounded-xl font-medium hover:from-blue-100 hover:to-cyan-100 transition-all duration-300 shadow-sm hover:shadow-md'>
+                    <button className='w-full px-4 py-3 bg-gradient-to-r from-slate-100 to-blue-100 text-slate-700 rounded-xl font-medium hover:from-blue-100 hover:to-cyan-100 active:from-cyan-100 active:to-blue-200 transition-all duration-300 shadow-sm hover:shadow-md active:shadow-inner touch-manipulation'>
                         Invite Friends
                     </button>
                 </div>
